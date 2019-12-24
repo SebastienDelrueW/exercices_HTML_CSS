@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux HTML</title>
+
+    <style>
+
+        /* Les styles pour la liste */ 
+       
+        dl {
+            background-color: rgb(168, 221, 203);
+        }
+        
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            font-style: italic;
+        }
+        
+
+         /* Les styles pour les tableaux */ 
+         
+        table {
+              font-family: Arial, Helvetica, sans-serif;
+              width: 80%;
+              /* font-size: 50px; */
+              border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #2e0202;
+            text-align: left;
+            padding: 8px;
+        }
+
+        /* even pair, odd impair */
+        tr:nth-child(even) {
+            background-color: rgb(189, 184, 178);
+        }
+
+        caption {
+            border: 1px solid rgb(19, 19, 235); 
+            padding: 16px;
+            background-color: cadetblue;
+            color: cornsilk;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Des tableaux et une liste de définition</h1>
+
+
+    <dl>
+        <dt>Vacances</dt>
+            <dd>Période de congés des personnes en activité.</dd>
+        <dt>Travail</dt>
+            <dd>Activités humaine organisée et utile. Ensemble de ces activités.</dd>
+    </dl>
+    <hr>
+
+    <h2>Des tableaux</h2>
+
+    <!--table>tr*6>td*3{cellule}-->
+
+    <table>
+        <caption>Les plus belles cie du monde</caption>
+        <tr>
+            <th>Compagnie</th>
+            <th>Contact</th>
+            <th>Pays</th>
+            <th>Téléphone</th>
+        </tr>
+        <tr>
+            <td>Auchan</td>
+            <td>M<sup>me</sup>Auchan</td>
+            <td>France</td>
+            <td>01 52 36 96 55</td>
+
+        </tr>
+        <tr>
+            <td>Carrefour</td>
+            <td>M. Carrefour</td>
+            <td>France</td>
+            <td>01 52 36 66 77</td>
+        </tr>
+        <tr>
+            <td>Lidl</td>
+            <td>Frau Lidl</td>
+            <td>Allemagne</td>
+            <td>+49 52 36 66 77</td>
+        </tr>
+        <tr>
+            <td>Leclerc</td>
+            <td>M. Le Couennec</td>
+            <td>Bretagne</td>
+            <td>
+                <ul>
+                    <li>06 58 12 44 30</li>
+                    <li>06 22 45 41 66 </li>
+                    <li></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.picard.fr/on/demandware.store/Sites-picard-Site/default/Default-Start?gclid=EAIaIQobChMI46jh1YXO5gIVxrTtCh35GQ_rEAAYASAAEgLRMfD_BwE&gclsrc=aw.ds" title="le site de picard" target="_blank"> Picard</a></td>
+            <td>M. Picard</td>
+            <td>France</td>
+            <td>04 36 66 77 69</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>Un tableau avec fusion de colonnes</h2>
+
+    <table>
+
+        <!-- tr*2>td*3 -->
+        <tr>
+            <th>Nom</th>
+            <th colspan="2">Courriel</th>
+            
+        </tr>
+        <tr>
+            <td>Père Noêl</td>
+            <td><a href="mailto:papanoel@polenord.pn" target="_blank">papanoel@polenord.pn</a></td>
+            <td><a href="mailto:santa-claus@noel.fr">santa-claus@noel.fr</td>
+        </tr>
+
+
+
+    </table>
+    <br>
+    <hr>
+    <h2>Un tableau avec fusion de rangées</h2>
+
+    <!-- table>tr*3>td*2 -->
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Bill Gates</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Téléphone</td>
+            <td>06 56 59 58 54 </td>
+        </tr>
+        <tr>
+            <td>04 54 96 22 41</td>
+
+        </tr>
+        <tr>
+            <td>04 54 06 66 88</td>
+
+        </tr>
+    </table>
+<br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
