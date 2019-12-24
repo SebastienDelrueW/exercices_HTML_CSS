@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Découpage de page</title>
+</head>
+<body>
+    
+
+<!-- header l'en-tête principale de la page -->
+    <header>
+        <h1>Découper une page en sections logiques</h1>
+        <p>Ce titre et le paragraphe sont dans l'en-tête</p>
+
+        <!-- bien que ce qoit pas obligatoire, on trouve dans l'en-tête un menu de navigation, le menu est parfois, dans sa balise nav après l'en-tête -->
+        <nav>
+
+            <!-- ul>li*4>a -->
+            <ul>
+                <li><a href="#">Navigation</a></li>
+                <li><a href="#">Qui sommes nous?</a></li>
+                <li><a href="#">Ce que nous faisons</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+                <!--une barre de recherche est un outil de navigation dans le site, il est nonn linéaire (contrairement à la ul) -->
+                <!-- le formulaire de recherche du site -->
+            <form action="#">
+                <input type="search" name="cherche" placeholder="Recherchez">
+                <input type="submit" value="ok">
+            </form>
+        </nav>
+    </header>
+
+    <!-- voici le contenu principal la balise MAIN, paefois un div id="main", ou div class="content"-->
+    <main>
+
+        <article>
+            <h2>Titre de niveau 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis reiciendis ipsam eum. Fugit, doloremque. Vitae perspiciatis ea enim sequi sed accusantium. Enim amet esse illum beatae, illo autem a dicta.</p>
+            <h3>titre de niveau 3</h3>
+            <p>autre Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio incidunt eius fugiat corrupti culpa eum iure provident saepe est eos nemo exercitationem impedit corporis iste ducimus tempore, aliquam expedita! Atque.</p>
+        </article>
+        <article>
+            <h2>Titre de niveau 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quibusdam obcaecati ex fugit repudiandae unde harum suscipit. Explicabo quia molestiae reprehenderit iusto, aut atque officiis omnis quae sed officia provident!</p>
+            <h3>titre de niveau 3</h3>
+            <p>autre Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure culpa autem minima atque quam ipsa quidem quibusdam blanditiis placeat odio, sapiente excepturi nemo aperiam! Velit quod repellat officiis aliquam?</p>
+        </article>
+        le contenu placé sur le côté peut être aussi dans le contenu princilpal
+        <aside>
+            <!--ul>li*5>a-->
+            <ul>
+                <li><a href="">item 1</a></li>
+                <li><a href="">item 2</a></li>
+                <li><a href="">item 3</a></li>
+                <li><a href="">item 4</a></li>
+                <li><a href="">item 5</a></li>
+            </ul>
+        </aside>
+    </main>
+
+<!--et voici le pied de page principal utilisé sur les différentes pages du site-->
+<footer>
+    &COPY. DR tout droit réservé toto.inc
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
